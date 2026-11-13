@@ -1,0 +1,13 @@
+PRINCIPLE 1: Loss Aversion
+  Why it fits: A freelancer juggling 2+ clients fears one client's rules or decisions leaking into another client's repo far more than they want "better context", so framing around that loss is what moves them to act on the CTA.
+  How to apply: Make the hero headline name the loss (e.g. "Client A's rules should never show up in Client B's repo"). Directly under it, show one concrete leak scenario: a Claude Code session in `client-b/` applying a decision that came from Client A's ticket. Put the single CTA immediately below. Do not add countdown timers or scarcity.
+
+PRINCIPLE 2: Mental Model
+  Why it fits: These developers already think in "one repo per client, one CLAUDE.md / AGENTS.md per repo", and thread repliers describe their workarounds as "a separate knowledge base per client", so a page that mirrors that structure is understood in seconds.
+  How to apply: Replace the abstract feature list with one visual of a file tree: `clients/acme/` and `clients/globex/`, each with its own rules, decisions log and inbox (chat, email, tickets), and a visible hard wall between them. Label it in their vocabulary ("per-client context for Claude Code and Codex"), not new product terms.
+
+PRINCIPLE 3: IKEA Effect
+  Why it fits: A developer who partly builds their own setup values it more, which turns the email ask into "save my workspace" and makes each signup a stronger signal of intent.
+  How to apply: Make the CTA a two-step micro-interaction. Step one is an input, "Name two of your clients", which instantly renders the file tree from Principle 2 with their client names in it. Step two is a single email field with the button "Save my isolated workspaces". Log step-one completions separately from email submits.
+
+Assumption: the behavioral test signal was blank in your request, so I assumed it is an email signup on the landing page. If the signal is something else (pre-payment, booking a call, a CLI install), Principle 3's CTA mechanics need to change; Principles 1 and 2 still hold.

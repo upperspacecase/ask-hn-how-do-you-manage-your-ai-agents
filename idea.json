@@ -1,0 +1,88 @@
+{
+  "status": "killed",
+  "killed_at_stage": 3,
+  "kill_reason": "Fails Stage 3 on both Valuable and Urgent. VALUABLE: the author calls re-explaining context \"the major time cost\" but gives no hours or dollars, and their own question 4 (\"how much time did it cost you?\") drew exactly one quantified answer in the 60-comment thread: \"Cost me 7 mins or so\" (MadBrad-Develop). Other repliers reported no cost at all: \"I keep sessions short and concise enough that it's not an issue\" (baalimago), \"The agent so far has not failed to reference the above files\" (marvstazar), \"It's a solved problem\" (jen729w). The nearest thing to a pain statement is unquantified (\"Too much reworking\", prosunpraiser2). URGENT: no deadline, blocked work or money on the line appears anywhere; nearly every replier already runs a free self-built fix (CLAUDE.md/AGENTS.md per repo, Obsidian vaults, ADR folders, own MCP server), and prosunpraiser2 says \"I don't think paying for anything will solve the problem.\" REAL passes, but the corroborating posts are almost all builders launching fixes, not buyers describing a cost. Not formally run, but Stage 4 would also kill: the thread alone names 15+ existing tools (PriBrain, estratos.ai, Breadcrumb, farero.ai, bench47, Basic Memory, slivingdoc, Varda, wayfinder and others), Skillsync is a YC W26 company in this space, and HN search returned 20+ \"persistent memory for coding agents\" Show HNs from Aug 2025 to Sep 2026, most with 1-5 points. I did not retrieve funding figures for Mem0, Zep or Letta, so none are claimed.",
+  "stage_2": {
+    "customer": "Freelance or contract software developers serving 2+ clients at once, who run Claude Code and Codex daily in separate client repos and receive requirements through chat, email and tickets. They must keep each client's rules and past decisions isolated. The post author (HN user Michel_Aventin) fits, as do thread repliers nilleb (\"a certain agent for a certain customer\"), BrunoBernardino (\"different PriBrain accounts per client\"), baalimago (\"different slivingdoc spaces per customer\"), cpinto (client-layered memory for accounting firms) and JustRouzbeh (\"a separate knowledge base per client\").",
+    "where": "Hacker News Ask HN and Show HN threads (this one: 99 points, 60 comments) are the only venue verified in this run. No subreddits, Discords, Slack groups or newsletters were checked, so none are claimed.",
+    "pays_for": "Evidenced in the thread only, with no prices retrieved: Claude and Codex subscription plans (synapsomorphy mentions weekly usage caps and \"plan quotas\"), the paid Johnny.Decimal MCP server (jen729w), PriBrain (paid, \"targeted at startups/SMBs, not freelancers\"), and dSebastien's paid Obsidian knowledge-base kit. Most repliers pay for nothing beyond the agent subscription and use free markdown files."
+  },
+  "stage_3": {
+    "real_posts": [
+      "https://news.ycombinator.com/item?id=47960057",
+      "https://news.ycombinator.com/item?id=47128630",
+      "https://news.ycombinator.com/item?id=49743049",
+      "https://news.ycombinator.com/item?id=46328769",
+      "https://news.ycombinator.com/item?id=47207442"
+    ],
+    "urgent": "FAILED. No evidence that anyone would try a fix this week: no deadlines, blocked work or money at stake in the source thread. Repliers already use free workarounds they built themselves and describe the problem as handled or solved. The author is doing market research (\"I'm exploring whether to build something\"), not asking for help with a blocked job.",
+    "valuable": "FAILED. The only quantified cost found is \"7 mins or so\" for one incident (MadBrad-Develop). The author gives no hours per week or dollars. The related post 47128630 quantifies data volume (1.6GB of session files), not time or money. Searches run on HN Algolia: \"agent memory across sessions re-explaining context\", \"claude code forgets decisions between sessions\", \"share context between claude code and codex\", \"persistent memory coding agents MCP\", \"tired of re-explaining context AI\". Only titles and one story excerpt of the related posts were read, not their comment threads; Reddit was not searched."
+  },
+  "stage_4": null,
+  "stage_5": null,
+  "stage_6": null,
+  "id": "hn_50403153",
+  "title": "Ask HN: How do you manage your AI agents' context across clients and projects?",
+  "url": "https://news.ycombinator.com/item?id=50403153",
+  "source": "hackernews",
+  "score": 99,
+  "num_comments": 60,
+  "app_name": "ask_hn_how_do_you_manage_your_ai_agents",
+  "summary": "Ask HN: How do you manage your AI agents' context across clients and projects?",
+  "tech_stack": "Next.js + TypeScript + Tailwind CSS",
+  "_fallback_kill_stage": 3,
+  "_fallback_kill_reason": "Fails Stage 3 on both Valuable and Urgent. VALUABLE: the author calls re-explaining context \"the major time cost\" but gives no hours or dollars, and their own question 4 (\"how much time did it cost you?\") drew exactly one quantified answer in the 60-comment thread: \"Cost me 7 mins or so\" (MadBrad-Develop). Other repliers reported no cost at all: \"I keep sessions short and concise enough that it's not an issue\" (baalimago), \"The agent so far has not failed to reference the above files\" (marvstazar), \"It's a solved problem\" (jen729w). The nearest thing to a pain statement is unquantified (\"Too much reworking\", prosunpraiser2). URGENT: no deadline, blocked work or money on the line appears anywhere; nearly every replier already runs a free self-built fix (CLAUDE.md/AGENTS.md per repo, Obsidian vaults, ADR folders, own MCP server), and prosunpraiser2 says \"I don't think paying for anything will solve the problem.\" REAL passes, but the corroborating posts are almost all builders launching fixes, not buyers describing a cost. Not formally run, but Stage 4 would also kill: the thread alone names 15+ existing tools (PriBrain, estratos.ai, Breadcrumb, farero.ai, bench47, Basic Memory, slivingdoc, Varda, wayfinder and others), Skillsync is a YC W26 company in this space, and HN search returned 20+ \"persistent memory for coding agents\" Show HNs from Aug 2025 to Sep 2026, most with 1-5 points. I did not retrieve funding figures for Mem0, Zep or Letta, so none are claimed.",
+  "_kill_report": "KILLS -- 2026-11-12\n\nTotal candidates evaluated: 24\nKilled: 24  |  Passed to MVP: 0\n\nBy stage:\n  Stage 1 (signal):       19 killed\n  Stage 2 (customer):     3 killed\n  Stage 3 (problem):      2 killed\n  Stage 4 (alternatives): 0 killed\n  Stage 5 (approach):     0 killed\n  Stage 6 (hypothesis):   0 killed\n",
+  "_total_evaluated": 24,
+  "_total_killed": 24,
+  "_fallback": true,
+  "_runners_up": [
+    {
+      "status": "killed",
+      "killed_at_stage": 3,
+      "kill_reason": "Fails Urgent and Valuable. The post is exploratory, not blocked: the author's own wording is \"seems like a logical next step\", \"This all sounds amazing\" and \"could help us out as well\", with no deadline, no money on the line and no stalled work. The only stated workaround (stopping local agents each evening and restarting them each morning) is given no hours or dollar figure. The only numbers in the post (29.3 min vs 162.7 min, 44% of agent time waiting) are quoted from an arXiv paper, not measured on their own workload, and the idle-agent claim is described as \"our feeling\". No current spend, no budget ceiling and no quantified loss is stated, so the cost cannot be quantified without inventing it. Real was also not met: three HN searches surfaced one adjacent problem post from a different author (Max 5x quota exhaustion), not two. I read only the first hit or two of each truncated result set, so that is a shortfall in evidence, not proof that none exist. Secondary reason, which would have killed at Stage 4: the author already names first-party options (Claude routines, Claude remote control sessions, Grok bots), and the 5 thread replies point to three more (agent-swarm.dev, opencheese.dev, scheduled agents with a shared knowledge store). The thread drew 6 points and 5 comments in 6 days, and most replies were vendors pitching.",
+      "stage_2": {
+        "customer": "Small software team (the author writes \"we\" throughout) that already delegates complex, long-running coding tasks to locally run Claude Code agents and sub-agents on engineers' own machines. They are funded by flat-rate seats (Claude Pro/Max, ChatGPT Plus/Pro) rather than API billing, and shut the agents down every evening. The person is the engineer or tech lead who owns the team's agent tooling and reads agent-systems course material (Stanford CS146S, CMU 11-768) and arXiv papers. Team size, company and revenue are not stated in the post.",
+        "where": "Hacker News (Ask HN and Show HN agent threads) and the anthropics/claude-code GitHub issue tracker are the only places confirmed by this run. No subreddits, Discords, Slack groups or newsletters were verified, so none are listed.",
+        "pays_for": "Claude Pro/Max and ChatGPT Plus/Pro subscriptions, named in the post. No other spend is stated; they explicitly have not moved to API pricing or self-hosted LLMs and are asking how the costs compare."
+      },
+      "stage_3": {
+        "real_posts": [
+          "https://news.ycombinator.com/item?id=47739260",
+          "https://github.com/anthropics/claude-code/issues/45756"
+        ],
+        "urgent": "None found. The post contains no deadline, no blocked work and no money at risk. The team's agents work today during office hours; overnight running is framed as a \"logical next step in efficiency\". The questions asked are survey questions (\"Is anyone running...\", \"How are the results? Is it an improvement?\"), not a request for a fix this week.",
+        "valuable": "Not quantifiable from the evidence. The post gives no hours per week lost to the evening stop and morning restart, no current monthly spend and no dollar figure for \"a fortune\". The 5.5x speedup and 44% waiting figures are from a third-party paper (arXiv 2606.10662), not the author's own measurements. Queries tried on HN Algolia search (stories and comments): \"always-on agents cost\", \"claude code overnight agents subscription\", \"multi-agent API cost subscription limits\". They returned the candidate itself, one adjacent problem post (\"Pro Max 5x quota exhausted in 1.5 hours despite moderate usage\", which is one post with two URLs above), and solution posts (a Show HN for an open-source \"Overnight\" CLI supervisor for Claude Code, and an autoresearch skill) rather than a second problem post."
+      },
+      "stage_4": null,
+      "stage_5": null,
+      "stage_6": null,
+      "id": "hn_50391647",
+      "title": "Ask HN: Is anyone running multi/always-on agents that don't cost a fortune?",
+      "url": "https://news.ycombinator.com/item?id=50391647",
+      "source": "hackernews",
+      "score": 6,
+      "num_comments": 5
+    },
+    {
+      "status": "killed",
+      "killed_at_stage": 2,
+      "kill_reason": "The problem cannot support a product: the person with the pain is not the person who has to adopt the fix. The author is a hobbyist self-hosting developer who wants family and friends off SMS/WhatsApp for philosophical reasons, and the post itself says those people 'don't care that much about privacy, decentralization, or extensibility' and are already served by SMS. The post names no money on the line, no deadline and no blocked work; the only cost is an unmet ideological preference and one week of hobby tinkering. A friendlier client does not fix this, because the family's switching cost and the network effect of SMS/WhatsApp/iMessage are the real blockers. The author is asking for a persuasion pitch, not a tool, and nothing in the post shows willingness to pay. No web searches were run; this kill rests only on the post's own text.",
+      "stage_2": {
+        "customer": "Software developers who self-host as a hobby, have stood up their own XMPP or Matrix server in the past few weeks, and are trying to move a mixed iOS/Android circle of roughly 5-20 non-technical family and friends off SMS/WhatsApp for ideological (open-protocol) reasons. The intended end users, the family members, have no stated pain.",
+        "where": "Hacker News XMPP/Matrix threads (the source post). Inferred, not verified by search: r/selfhosted, r/matrixdotorg, r/xmpp, and Matrix/XMPP project rooms.",
+        "pays_for": "Not established from the post. The only spend implied is self-hosting infrastructure (a server and domain); the post names no paid messaging product and no dollar figures. The family and friends pay nothing for SMS/WhatsApp."
+      },
+      "stage_3": null,
+      "stage_4": null,
+      "stage_5": null,
+      "stage_6": null,
+      "id": "hn_50405250",
+      "title": "Ask HN: How did you convince family and friends to join your XMPP/Matrix server?",
+      "url": "https://news.ycombinator.com/item?id=50405250",
+      "source": "hackernews",
+      "score": 102,
+      "num_comments": 97
+    }
+  ]
+}

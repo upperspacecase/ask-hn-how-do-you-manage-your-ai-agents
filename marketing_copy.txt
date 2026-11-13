@@ -1,0 +1,17 @@
+HOOK: Open Client B's repo and your agent knows Client B's rules, and nothing about Client A.
+
+SUBHEADLINE: For freelance developers running Claude Code and Codex across two or more client repos: each client's rules and past decisions load in that client's repo and nowhere else.
+
+VALUE_PROP:
+One context store per client, loaded when you open that client's repo.
+Requirements from chat, email and tickets get filed to the client they came from.
+Claude Code and Codex read the same store, so you record a decision once.
+
+CTA: Isolate your first client
+
+SECONDARY_CTA: See how isolation works
+
+OBJECTIONS:
+- "I already handle this with a CLAUDE.md per repo and separate accounts." — That covers what you remember to write down; this also captures the decision that arrived in a chat thread on Tuesday and never reached the file.
+- "My contracts don't let me put client material in a third-party tool." — Each client's store is a plain folder on your machine that you can read, diff and delete; nothing is pooled across clients.
+- "It's one more tool to set up and maintain across every repo." — Setup is one command per repo, and removing it is deleting one folder, so a trial on a single client costs you minutes.

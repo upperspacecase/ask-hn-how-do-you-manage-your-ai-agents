@@ -1,0 +1,16 @@
+SCORE: 7/10
+
+TOP 3 FIXES:
+1. **Lead the headline with the differentiator** (`components/Landing.tsx:24`). The current H1 promises what a per-repo CLAUDE.md already delivers, and your own subhead admits it. The part only you can say is in the subhead's third sentence. Swap the H1 to: "Acme's Slack decision lands in Acme's decisions.md. Globex's agent never sees it." Then delete "A CLAUDE.md per repo holds the rules you wrote down." and change "This also files" to "It files".
+2. **Say it isn't built yet before the form** (`components/Landing.tsx:27`). The subhead uses present tense ("This also files…"), but the visitor only learns it's a waitlist after naming two clients, when the button becomes "Email me when it's ready to install". Add one sentence at the end of the subhead: "Not built yet: name two clients to see the wall, then leave an email for the install."
+3. **Replace the single weak quote with the count** (`components/Landing.tsx:42`). nilleb's "I use a certain agent for a certain customer" reads as a workaround that works, not as pain. Replace with: "Five repliers each hand-built their own wall: one agent per customer (nilleb), separate accounts per client (BrunoBernardino), a separate knowledge base per client (JustRouzbeh)." I took these from your brief, not from the thread, so check the wording against the thread before shipping.
+
+GREEN FLAGS:
+- **Specific copy:** "API stays snake_case", `decisions.md`, and Slack/Gmail/Linear are all things the reader can picture and check.
+- **Named audience:** the first subhead sentence says exactly who it is for, so anyone outside that group self-selects out.
+- **One promise:** client isolation is the only claim, with no feature list, no pricing noise and no competing links.
+- **Benefit CTAs:** "Show my two clients walled off" and "Email me when it's ready to install" both say what the visitor gets.
+- **Personalised first step:** the visitor's own two client names appear in the folder tree and the demo before the email ask.
+- **Honest labelling:** the demo caption says "Simulation of the intended behaviour". The "names stay in your browser" line is true, since `SignupForm.tsx` only posts the event name.
+- **Real proof source:** the Hacker News thread is linked, so the demand claim can be checked.
+- **Logo strip:** it is framed as "where your context is scattered today", so it does not pose as customer logos.

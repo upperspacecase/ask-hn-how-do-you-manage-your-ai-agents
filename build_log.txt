@@ -1,0 +1,22 @@
+The landing page is built in the current directory and `npm run build`, the type check and lint all pass. Nothing is committed or deployed.
+
+I ran the production build locally and checked it in the browser at desktop width and at 375px:
+
+- **Hero:** the hook is the headline and the subheadline sits under it, both verbatim, followed by the two-step CTA.
+- **CTA step one:** "Name two of your clients" with the button "Isolate your first client". Submitting it renders the two-folder tree with the visitor's client names and a wall between them.
+- **CTA step two:** one email field with the button "Save my isolated workspaces". I submitted it end to end and got the confirmation message.
+- **Demo:** a 7-second looping Remotion `<Player />`. A ticket gets filed to one client's decisions, then the session switches to the other client's repo and that rule stays out. After step one it replays with the visitor's own client names.
+- **Logo strip and footer:** seven text logos (Claude Code, Codex, CLAUDE.md, AGENTS.md, Slack, Gmail, Linear) and three footer links (Privacy, Terms, the Ask HN thread).
+
+Things you should know before running the test:
+
+- **Signups are only logged.** `POST /api/subscribe` writes `clients_named` and `signup` as separate JSON lines to the server log, which is the same pattern as your `tld_watch` build. Nothing is persisted and no email is sent unless you set `SIGNUP_WEBHOOK_URL`.
+- **Client names never leave the browser.** I assumed real client names are confidential, so step one logs only that it happened. The form and the privacy page both say this.
+- **The test signal was blank,** so I kept the email-signup assumption from the psychology notes.
+- **The radical-simplicity rules won over the design system.** There is no comparison table, pricing row or blue primary. Orange appears only on the CTA button, with dark text for contrast. Glass styling is limited to the form card and the demo frame.
+- **The hook won over the loss-framed headline** suggested in Principle 1, since the copy was to be used verbatim. The leak scenario is shown in the demo rather than as a separate block under the headline.
+- **The secondary CTA and the three objections are not on the page,** because the brief allows one action and forbids an FAQ.
+- **There is no Contact link,** because I had no real contact address to put there.
+- **The logo strip is not customers.** Its caption reads "Where your client context is scattered today, before it is filed per client."
+- **`npx remotion still` fails on this machine** with a headless-browser "Target closed" error. Bundling completes and the Player works in the browser, so the Vercel build is unaffected, but server-side rendering of the video is unverified here.
+- **Not checked:** the 768px and 1440px breakpoints, and the 375px check covered only step one of the form and the demo.

@@ -1,0 +1,7 @@
+All three audit fixes are applied; type check and lint pass, but I did not render the page in a browser.
+
+- **Fix 1 (honest CTAs)**, `components/SignupForm.tsx`: the first button now reads "Show my two clients walled off" and the email button reads "Email me when it's ready to install".
+- **Fix 2 (CLAUDE.md objection)**, `components/Landing.tsx`: the subhead is replaced with the audit's suggested copy, which names what a per-repo CLAUDE.md covers and adds the Slack/Gmail/Linear filing into that client's `decisions.md`.
+- **Fix 3 (proof above the fold)**, `components/Landing.tsx`: one line under the form links the Ask HN thread by its title and quotes nilleb. I checked the wording against the live thread; the actual sentence is "I use a certain agent for a certain customer", so I quoted that.
+
+No new sections were added, and the Remotion composition, logo strip and footer are untouched. The footer still carries its own "Ask HN thread" link, so the thread is now linked twice.
